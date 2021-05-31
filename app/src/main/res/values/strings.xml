@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WordWolfGame</string>
+    <string-array name="wordThemeArray">
+        <item>恋愛</item>
+        <item>食べ物・飲み物</item>
+        <item>生活</item>
+        <item>遊び</item>
+        <item>学校生活</item>
+    </string-array>
+</resources>

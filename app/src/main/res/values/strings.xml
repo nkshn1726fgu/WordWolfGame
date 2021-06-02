@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">WordWolfGame</string>
+    <string name="nameHint">名前を入力してください</string>
+    <string name="nameConfirmation">本を<b>@@+id/etName1</b>冊買います</string>
     <string-array name="wordThemeArray">
         <item>恋愛</item>
         <item>食べ物・飲み物</item>

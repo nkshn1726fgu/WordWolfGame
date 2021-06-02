@@ -7,7 +7,7 @@
     tools:context=".GameSettingActivity">
 
     <NumberPicker
-        android:id="@+id/numPicker"
+        android:id="@+id/npWolfCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <NumberPicker
-        android:id="@+id/numPicker2"
+        android:id="@+id/npHeadCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnWordTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -38,10 +38,10 @@
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numPicker" />
+        app:layout_constraintTop_toBottomOf="@+id/npWolfCount" />
 
     <NumberPicker
-        android:id="@+id/numPicker3"
+        android:id="@+id/npTimeLimit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -49,7 +49,7 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spnWordTheme" />
 
     <TextView
         android:id="@+id/tvWordTheme"
@@ -57,18 +57,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="お題カテゴリー"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/spnWordTheme"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numPicker2" />
+        app:layout_constraintTop_toBottomOf="@+id/npHeadCount" />
     <TextView
         android:id="@+id/tvTimeLimitSetting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
         android:text="制限時間"
-        app:layout_constraintEnd_toStartOf="@+id/numPicker3"
+        app:layout_constraintEnd_toStartOf="@+id/npTimeLimit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spnWordTheme" />
 
     <TextView
         android:id="@+id/tvPlayerHeadcountSetting"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="150dp"
         android:text="人数"
-        app:layout_constraintBottom_toTopOf="@+id/numPicker2"
+        app:layout_constraintBottom_toTopOf="@+id/npHeadCount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:text="人狼の数"
-        app:layout_constraintBottom_toTopOf="@+id/numPicker"
+        app:layout_constraintBottom_toTopOf="@+id/npWolfCount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -104,5 +104,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numPicker3" />
+        app:layout_constraintTop_toBottomOf="@+id/npTimeLimit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

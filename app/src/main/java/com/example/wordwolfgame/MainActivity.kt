@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     /**
-     * SelectActivity.ktに画面遷移する
+     * GameSettingActivity.ktに画面遷移する
      */
     private fun moveToGameSettingActivity() {
         val intent = Intent(this@MainActivity, GameSettingActivity::class.java)

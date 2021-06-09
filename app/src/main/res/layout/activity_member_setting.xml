@@ -1,105 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLinearLayout"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="名前の設定"
-        android:layout_gravity="center"
-        android:textSize="34sp" />
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/etName1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー1"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー2"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName3"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー3"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName4"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー4"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName5"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー5"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName6"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー6"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー7"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName8"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー8"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName9"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー9"
-                android:inputType="phone" />
-
-            <EditText
-                android:id="@+id/etName10"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="プレイヤー10"
-                android:inputType="phone" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="決定" />
+    tools:context=".MainActivity">
 </LinearLayout>

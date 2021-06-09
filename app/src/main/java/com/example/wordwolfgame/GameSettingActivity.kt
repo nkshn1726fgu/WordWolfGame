@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_game_setting.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class GameSettingActivity : AppCompatActivity() {
+    val wwProperty = WordWolfPropertyActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_setting)
@@ -20,6 +21,7 @@ class GameSettingActivity : AppCompatActivity() {
         }
 
         numberPickerSetting()
+
 
     }
     /**
@@ -33,18 +35,23 @@ class GameSettingActivity : AppCompatActivity() {
      * NumberPickerの処理
      */
     private fun numberPickerSetting(){
-        npHeadCount.minValue=3
-        npHeadCount.maxValue=10
-        npHeadCount.value=3
+        npHeadCount.minValue = 3
+        npHeadCount.maxValue = 10
+        npHeadCount.value = 3
 
-        npWolfCount.minValue=3
-        npWolfCount.maxValue=10
-        npWolfCount.value=3
+        npWolfCount.minValue = 3
+        npWolfCount.maxValue = 10
+        npWolfCount.value = 3
 
 
-        npTimeLimit.minValue=1
-        npTimeLimit.maxValue=15
-        npTimeLimit.value=5
+        npTimeLimit.minValue = 1
+        npTimeLimit.maxValue = 15
+        npTimeLimit.value = 5
+
+        wwProperty.headCount = npHeadCount.value
+        wwProperty.wolfCount = npWolfCount.value
+        wwProperty.timeLimit = npTimeLimit.value
+
     }
 
 }
